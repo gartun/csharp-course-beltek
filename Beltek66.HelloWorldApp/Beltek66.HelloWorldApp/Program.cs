@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-//tr90 0001 2009 1940 0006 0000 71
-//Yıldırım Beyazıt Üniversitesi Döner Sermaye İşletmesi
-//Ticaret Uzman Yardımcısı başvurusu / Gökhan Artun / 19796785664
+
 
 namespace Beltek66.HelloWorldApp
 {
