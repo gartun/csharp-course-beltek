@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Linq;
 
+//tr90 0001 2009 1940 0006 0000 71
+//Yıldırım Beyazıt Üniversitesi Döner Sermaye İşletmesi
+//Ticaret Uzman Yardımcısı başvurusu / Gökhan Artun / 19796785664
+
 namespace Beltek66.HelloWorldApp
 {
     internal class Program
@@ -8,9 +12,12 @@ namespace Beltek66.HelloWorldApp
         static void Main(string[] args)
         {
             string isim = "Ahmet";
+            const double PI = 3.14159;
             int sayi = 5;
             byte num = 3;
 
+            Console.WriteLine($"PI number is taken as {PI}");
+            
             string[] cities = { "Ankara", "İstanbul" };
             int[] notes = { 23, 12, 45, 78, 34 };
 
