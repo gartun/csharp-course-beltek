@@ -30,23 +30,38 @@ namespace Beltek66.HelloWorldApp
             //}
             #endregion
 
-           
-            
-            Console.WriteLine("asallığı sorgulanacak sayı:");
-            byte num = byte.Parse(Console.ReadLine());
-            //Console.WriteLine("kuvvet:");
-            //byte pow = byte.Parse(Console.ReadLine());
+          
+            Console.WriteLine("Başlangıç sayısı:");
+            byte firstNum = byte.Parse(Console.ReadLine());
+            Console.WriteLine("Bitiş Sayısı:");
+            byte lastNum = byte.Parse(Console.ReadLine());
             //Console.WriteLine("Tek (t)/çift (ç) ?");
             //string decision = Console.ReadLine();
 
-            //if(secNum < firstNum)
-            //{
-            //    byte smallNum = secNum;
-            //    secNum = firstNum;
-            //    firstNum = smallNum;
+            if (lastNum < firstNum)
+            {
+                byte smallNum = lastNum;
+                lastNum = firstNum;
+                firstNum = smallNum;
+            }
 
-            //}
+            for(int i = firstNum; i < lastNum; i++)
+            {
+                int primeCheckResult = isPrime(i);
+                string resultSentence = primeCheckResult == 1 ? "asal değildir" : "asaldır";
 
+                Console.WriteLine($"{i} sayısı {resultSentence}");
+                Console.WriteLine(new String('-', 25));
+            }
+        }
+
+        static int isPrime(int num)
+        {
+            // Prime numbers start from 2
+            if(num < 2)
+            {
+                return 1;
+            }
 
             byte counter = 0;
             for (int i = 2; i < num; i++)
@@ -54,31 +69,10 @@ namespace Beltek66.HelloWorldApp
                 if (num % i == 0)
                 {
                     counter++;
-                    break;
-                }    
+                    return 1;
+                }
             }
-            Console.WriteLine(counter == 0 ? $"{num} sayısı asaldır" : $"{num} sayısı asal değildir");
-
-
-
-
-            //int sum = 0;
-
-            //Console.WriteLine("\nSonuç:");
-
-            //for (; firstNum < secNum; ++firstNum)
-            //{
-            //    sum += firstNum;
-            //}
-
-            //Console.WriteLine(sum);
-
-            Console.ReadLine();
-        }
-        
-        static string runIt()
-        {
-            return "hello from runIt";
+            return 0;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Gazi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Gazi\\.nuget\\packages"
+      "C:\\Users\\gartun\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gartun\\.nuget\\packages"
     ]
   }
 }

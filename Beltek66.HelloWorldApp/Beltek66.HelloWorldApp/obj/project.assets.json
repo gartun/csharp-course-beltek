@@ -8,26 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Gazi\\.nuget\\packages\\": {}
+    "C:\\Users\\gartun\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\gartun-csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp.csproj",
+      "projectUniqueName": "C:\\Users\\gartun\\Desktop\\csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp.csproj",
       "projectName": "Beltek66.HelloWorldApp",
-      "projectPath": "C:\\gartun-csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp.csproj",
-      "packagesPath": "C:\\Users\\Gazi\\.nuget\\packages\\",
-      "outputPath": "C:\\gartun-csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\obj\\",
+      "projectPath": "C:\\Users\\gartun\\Desktop\\csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp.csproj",
+      "packagesPath": "C:\\Users\\gartun\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gartun\\Desktop\\csharp\\Beltek66.HelloWorldApp\\Beltek66.HelloWorldApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gazi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\gartun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
