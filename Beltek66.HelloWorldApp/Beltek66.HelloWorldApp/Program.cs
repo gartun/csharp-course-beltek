@@ -9,28 +9,69 @@ namespace Beltek66.HelloWorldApp
     {
         static void Main(string[] args)
         {
-            string isim = "Ahmet";
-            const double PI = 3.14159;
-            int sayi = 5;
-            byte num = 3;
+            #region Switch Case Example
+            //Console.WriteLine("İşlem seçiniz\n1-Havale İşlemleri\n2-Eft\n3-Şifre İşlemleri\n4-Operatör\n");
+            //string decision = Console.ReadLine();
 
-            Console.WriteLine($"PI number is taken as {PI}");
+            //switch(decision)
+            //{
+            //    case "1":
+            //        Console.WriteLine("Havale");
+            //        break;
+            //    case "2":
+            //        Console.WriteLine("Eft");
+            //        break;
+            //    case "3":
+            //        Console.WriteLine("Şifre işlemleri");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Operatöre bağlan");
+            //        break;
+            //}
+            #endregion
+
+           
             
-            string[] cities = { "Ankara", "İstanbul" };
-            int[] notes = { 23, 12, 45, 78, 34 };
+            Console.WriteLine("asallığı sorgulanacak sayı:");
+            byte num = byte.Parse(Console.ReadLine());
+            //Console.WriteLine("kuvvet:");
+            //byte pow = byte.Parse(Console.ReadLine());
+            //Console.WriteLine("Tek (t)/çift (ç) ?");
+            //string decision = Console.ReadLine();
 
-            for (int i = 0; i < 10; i++) 
+            //if(secNum < firstNum)
+            //{
+            //    byte smallNum = secNum;
+            //    secNum = firstNum;
+            //    firstNum = smallNum;
+
+            //}
+
+
+            byte counter = 0;
+            for (int i = 2; i < num; i++)
             {
-                if ( i % 2 == 0 )
+                if (num % i == 0)
                 {
-                    continue;
-                }
-                Console.WriteLine(i);
+                    counter++;
+                    break;
+                }    
             }
+            Console.WriteLine(counter == 0 ? $"{num} sayısı asaldır" : $"{num} sayısı asal değildir");
 
-            //Console.WriteLine(notes.Max());
-            //Console.WriteLine(notes.Min());
-            //Console.WriteLine(notes.Sum());
+
+
+
+            //int sum = 0;
+
+            //Console.WriteLine("\nSonuç:");
+
+            //for (; firstNum < secNum; ++firstNum)
+            //{
+            //    sum += firstNum;
+            //}
+
+            //Console.WriteLine(sum);
 
             Console.ReadLine();
         }
