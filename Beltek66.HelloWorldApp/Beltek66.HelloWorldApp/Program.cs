@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+
 
 
 
@@ -30,7 +30,19 @@ namespace Beltek66.HelloWorldApp
             //}
             #endregion
 
-          
+            #region Factorial example
+            //byte[] numArray = { 0, 1, 2, 3, 4, 5 };
+            //foreach (var item in numArray)
+            //{
+            //    Console.WriteLine($"{item} sayısının faktöriyeli: {fact(item)}");
+            //}
+            //static int fact( int num )
+            //{
+            //    if (num < 2) return 1;
+            //    return num * fact(num - 1);
+            //}
+            #endregion
+
             Console.WriteLine("Başlangıç sayısı:");
             byte firstNum = byte.Parse(Console.ReadLine());
             Console.WriteLine("Bitiş Sayısı:");
@@ -74,5 +86,7 @@ namespace Beltek66.HelloWorldApp
             }
             return 0;
         }
+
+       
     }
 }
