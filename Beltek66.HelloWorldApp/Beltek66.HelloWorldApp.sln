@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek66.HelloWorldApp", "Beltek66.HelloWorldApp\Beltek66.HelloWorldApp.csproj", "{0F3F34F2-DCED-4201-9990-A7E5234CB47F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek66.HelloWorldApp", "Beltek66.HelloWorldApp\Beltek66.HelloWorldApp.csproj", "{0F3F34F2-DCED-4201-9990-A7E5234CB47F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek66.DizilerApp", "Beltek66.DizilerApp\Beltek66.DizilerApp.csproj", "{8C1127F5-821E-444A-90FE-9862EED4B22C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0F3F34F2-DCED-4201-9990-A7E5234CB47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F3F34F2-DCED-4201-9990-A7E5234CB47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F3F34F2-DCED-4201-9990-A7E5234CB47F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

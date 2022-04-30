@@ -3,6 +3,7 @@
 
 
 
+
 namespace Beltek66.HelloWorldApp
 {
     internal class Program
@@ -43,28 +44,68 @@ namespace Beltek66.HelloWorldApp
             //}
             #endregion
 
-            Console.WriteLine("Başlangıç sayısı:");
-            byte firstNum = byte.Parse(Console.ReadLine());
-            Console.WriteLine("Bitiş Sayısı:");
-            byte lastNum = byte.Parse(Console.ReadLine());
-            //Console.WriteLine("Tek (t)/çift (ç) ?");
-            //string decision = Console.ReadLine();
+            #region check whether each number in an interval is prime
+            //Console.WriteLine("Başlangıç sayısı:");
+            //byte firstNum = byte.Parse(Console.ReadLine());
+            //Console.WriteLine("Bitiş Sayısı:");
+            //byte lastNum = byte.Parse(Console.ReadLine());
+            ////Console.WriteLine("Tek (t)/çift (ç) ?");
+            ////string decision = Console.ReadLine();
 
-            if (lastNum < firstNum)
-            {
-                byte smallNum = lastNum;
-                lastNum = firstNum;
-                firstNum = smallNum;
-            }
+            //if (lastNum < firstNum)
+            //{
+            //    byte smallNum = lastNum;
+            //    lastNum = firstNum;
+            //    firstNum = smallNum;
+            //}
 
-            for(int i = firstNum; i < lastNum; i++)
-            {
-                int primeCheckResult = isPrime(i);
-                string resultSentence = primeCheckResult == 1 ? "asal değildir" : "asaldır";
+            //for(int i = firstNum; i < lastNum; i++)
+            //{
+            //    int primeCheckResult = isPrime(i);
+            //    string resultSentence = primeCheckResult == 1 ? "asal değildir" : "asaldır";
 
-                Console.WriteLine($"{i} sayısı {resultSentence}");
-                Console.WriteLine(new String('-', 25));
-            }
+            //    Console.WriteLine($"{i} sayısı {resultSentence}");
+            //    Console.WriteLine(new String('-', 25));
+            //}
+            #endregion
+
+            #region while example - sum the numbers that users input until they type "t"
+            //int sum = 0;
+
+            //string decision = "";
+            //while(decision.ToLower() != "t")
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int num = int.Parse(Console.ReadLine());
+            //    sum += num;
+
+            //    Console.WriteLine("Tamam mı / Devam mı?");
+            //    decision = Console.ReadLine();
+            //}
+
+            //Console.WriteLine("Sonuç: " + sum);
+
+            #endregion 
+
+            #region while example - guess the number
+            //Random rnd = new Random();
+            //int num = rnd.Next(10);
+            //int lives = 3;
+            //Console.WriteLine(num);
+            //int guess;
+
+            //do
+            //{
+            //    Console.WriteLine("Tahmin: ");
+            //    --lives;
+            //    guess = int.Parse(Console.ReadLine());
+            //} while(guess != num && lives != 0);
+
+            
+            //Console
+            //    .WriteLine(guess != num ? "Hakkınız Bitti..." : "Tebrikler...");
+            #endregion
+
         }
 
         static int isPrime(int num)
@@ -75,12 +116,12 @@ namespace Beltek66.HelloWorldApp
                 return 1;
             }
 
-            byte counter = 0;
-            for (int i = 2; i < num; i++)
+            
+            for (int i = 2; i < num / 2; i++)
             {
                 if (num % i == 0)
                 {
-                    counter++;
+                    
                     return 1;
                 }
             }
