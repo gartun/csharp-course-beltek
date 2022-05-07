@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek66.HelloWorldApp", "Beltek66.HelloWorldApp\Beltek66.HelloWorldApp.csproj", "{0F3F34F2-DCED-4201-9990-A7E5234CB47F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek66.DizilerApp", "Beltek66.DizilerApp\Beltek66.DizilerApp.csproj", "{8C1127F5-821E-444A-90FE-9862EED4B22C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek66.DizilerApp", "Beltek66.DizilerApp\Beltek66.DizilerApp.csproj", "{8C1127F5-821E-444A-90FE-9862EED4B22C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek66.MethodsApp", "Beltek66.MethodsApp\Beltek66.MethodsApp.csproj", "{A637FFF7-573E-47A9-811B-53D96E874EC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1127F5-821E-444A-90FE-9862EED4B22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A637FFF7-573E-47A9-811B-53D96E874EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A637FFF7-573E-47A9-811B-53D96E874EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A637FFF7-573E-47A9-811B-53D96E874EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A637FFF7-573E-47A9-811B-53D96E874EC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
