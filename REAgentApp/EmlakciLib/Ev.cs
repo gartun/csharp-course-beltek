@@ -6,10 +6,9 @@ namespace EmlakciLib
     {
         
         public int Floor { get; set; }
-        private int numOfRooms;
         public int size;
-        
 
+        private int numOfRooms;
         public void SetNumOfRooms(int numOfRooms)
         {
             this.numOfRooms = numOfRooms;
@@ -19,6 +18,7 @@ namespace EmlakciLib
         {
             return this.numOfRooms;
         }
+
 
         private string nei;
 
@@ -31,14 +31,14 @@ namespace EmlakciLib
         
         public static string PrintInfo(Ev ev)
         {
-            return $"oda sayısı: {ev.GetNumOfRooms()}\talan: {ev.size}\tsemt: {ev.nei}\tkat sayısı: {ev.Floor}\n";
+            return $"oda sayısı: {ev.GetNumOfRooms()}\talan: {ev.size}\tsemt: {ev.nei}\tkat sayısı: {ev.Floor}\t";
         }
 
 
         
         public string PrintInfo()
         {
-            return $"oda sayısı: {this.GetNumOfRooms()}\talan: {this.size}\tsemt: {this.nei}\tkat sayısı: {this.Floor}\n";
+            return $"oda sayısı: {this.GetNumOfRooms()}\talan: {this.size}\tsemt: {this.nei}\tkat sayısı: {this.Floor}\t";
         }
     }
 }

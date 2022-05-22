@@ -8,11 +8,13 @@ namespace REAgentApp
     {
         static void Main(string[] args)
         {
-            Ev home1 = new Ev();
+            KiralikEv home1 = new KiralikEv();
             home1.size = 200;
             home1.Floor = 2;
             home1.SetNumOfRooms(3);
             home1.Nei = "Keçiören";
+            home1.Kira = 2000.00;
+            home1.Depozito = 2500.00;
 
             Ev home2 = new Ev { size = 250, Floor = 2, Nei = "Beşevler" };
 
