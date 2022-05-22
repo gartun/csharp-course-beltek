@@ -1,5 +1,6 @@
 ﻿using System;
 using EmlakciLib;
+using TasitLib;
 
 namespace REAgentApp
 {
@@ -9,15 +10,20 @@ namespace REAgentApp
         {
             Ev home1 = new Ev();
             home1.size = 200;
-            home1.floor = 2;
-            home1.numOfRooms = 3;
-            home1.nei = "Keçiören";
+            home1.Floor = 2;
+            home1.SetNumOfRooms(3);
+            home1.Nei = "Keçiören";
 
-            Ev home2 = new Ev { size = 150, floor = 2, nei = "Beşevler", numOfRooms = 4 };
+            Ev home2 = new Ev { size = 250, Floor = 2, Nei = "Beşevler" };
+
+            home2.SetNumOfRooms(4);
 
             Console.WriteLine(home1.PrintInfo());
 
             Console.WriteLine(home2.PrintInfo());
+
+            Car car1 = new Car("red", "Peugeot 406", 2000);
+            Console.WriteLine(car1.PrintInfo());
 
         }
     }

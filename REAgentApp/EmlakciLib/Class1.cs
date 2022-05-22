@@ -2,28 +2,47 @@
 
 namespace EmlakciLib
 {
-    public class Ev
+    public class Ev 
     {
-        // ev nesnesine ait olduklarından statik olamazlar
-        public int floor;
-        public int numOfRooms;
+        
+        public int Floor { get; set; }
+        private int numOfRooms;
         public int size;
-        public string nei;
+        
 
+        public void SetNumOfRooms(int numOfRooms)
+        {
+            this.numOfRooms = numOfRooms;
+        }
 
-        // parametre ile çağrılan evin bilgilerini getirir. Nesneye değil classa aittir.
+        public int GetNumOfRooms()
+        {
+            return this.numOfRooms;
+        }
+
+        private string nei;
+
+        public string Nei
+        {
+            get { return nei; }
+            set { nei = value.ToUpper(); }
+        }
+
+        
         public static string PrintInfo(Ev ev)
         {
-            return $"oda sayısı: {ev.numOfRooms}\nalan: {ev.size}\nsemt: {ev.nei}\nkat sayısı: {ev.floor}";
+            return $"oda sayısı: {ev.GetNumOfRooms()}\talan: {ev.size}\tsemt: {ev.nei}\tkat sayısı: {ev.Floor}\n";
         }
 
 
-        // her nesnenin kendi özelliklerini getirir.
+        
         public string PrintInfo()
         {
-            return $"oda sayısı: {this.numOfRooms}\nalan: {this.size}\nsemt: {this.nei}\nkat sayısı: {this.floor}";
+            return $"oda sayısı: {this.GetNumOfRooms()}\talan: {this.size}\tsemt: {this.nei}\tkat sayısı: {this.Floor}\n";
         }
     }
-}//class library dosyası derlendiğinde ortaya dll (dinamic link library) dosyası çıkar
+}
+
+//class library dosyası derlendiğinde ortaya dll (dinamic link library) dosyası çıkar
  //Dll dosyaları içerinde classlar bulunur.
  //bu classları başka projelerde kullanmak için projeye referans olarak göstermemiz gerekir.
